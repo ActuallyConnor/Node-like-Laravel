@@ -23,7 +23,7 @@ I wanted a simple Node.js app starting place that had a familiar directory struc
 2. `cd` into the project root.
 3. Run `npm install`.
 4. Copy the `.env.example` file to a new file just called `.env`.
-5. Run `node app.js` and navigate your browser to `localhost:3000`.
+5. Run `node scripts.js` and navigate your browser to `localhost:3000`.
 
 ## More info
 It's been set up so that it recognizes `/public` as the web root directory.
