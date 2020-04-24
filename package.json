@@ -1,0 +1,25 @@
+{
+  "name": "node-express-starter",
+  "version": "1.0.0",
+  "description": "This is a Node.js and Express.js starter repo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch scss -o public/css"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Connor Smyth",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "socket.io": "^2.3.0",
+    "winston": "^3.2.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "vue": "^2.6.11"
+  }
+}
