@@ -9,10 +9,7 @@ I wanted a simple Node.js app starting place that had a familiar directory struc
 4. Copy the `.env.example` file to a new file just called `.env`.
 5. Run `node scripts.js` and navigate your browser to `localhost:3000`.
 
-
-## Command line tasks
-
-### Gulp tasks
+## Gulp tasks
 - `gulp watch` - compile Sass and JavaScript in `/resources/sass/` or `/resources/js` directories to the respective `/public/css/` or `/public/js/` directories.
 - `gulp styles` - compile Sass in `/resources/sass/` directory to the `/public/css/` directory.
 - `gulp scripts` - compile JavaScript in `/resources/js/` directory to the `/public/js/` directory.
