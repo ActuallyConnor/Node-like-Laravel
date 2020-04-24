@@ -1,6 +1,4 @@
-# Node.js & Express.js Starter
-
-Connor Smyth - [connorsmyth.com](https://connorsmyth.com)
+# Node like Laravel
 
 I wanted a simple Node.js app starting place that had a familiar directory structure to Laravel and let you start working right away.
 
