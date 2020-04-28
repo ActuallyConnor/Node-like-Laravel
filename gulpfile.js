@@ -10,36 +10,6 @@ const FOUNDATION = 'node_modules/foundation-sites';
 // Select Foundation components, remove components project will not use
 const SOURCE = {
     scripts: [
-        // Lets grab what-input first
-        'node_modules/what-input/dist/what-input.js',
-
-        // Foundation core - needed if you want to use any of the components below
-        FOUNDATION + '/dist/js/plugins/foundation.core.js',
-        FOUNDATION + '/dist/js/plugins/foundation.util.*.js',
-
-        // Pick the components you need in your project
-        FOUNDATION + '/dist/js/plugins/foundation.abide.js',
-        FOUNDATION + '/dist/js/plugins/foundation.accordion.js',
-        FOUNDATION + '/dist/js/plugins/foundation.accordionMenu.js',
-        FOUNDATION + '/dist/js/plugins/foundation.drilldown.js',
-        FOUNDATION + '/dist/js/plugins/foundation.dropdown.js',
-        FOUNDATION + '/dist/js/plugins/foundation.dropdownMenu.js',
-        FOUNDATION + '/dist/js/plugins/foundation.equalizer.js',
-        FOUNDATION + '/dist/js/plugins/foundation.interchange.js',
-        FOUNDATION + '/dist/js/plugins/foundation.magellan.js',
-        FOUNDATION + '/dist/js/plugins/foundation.offcanvas.js',
-        FOUNDATION + '/dist/js/plugins/foundation.orbit.js',
-        FOUNDATION + '/dist/js/plugins/foundation.responsiveAccordionTabs.js',
-        FOUNDATION + '/dist/js/plugins/foundation.responsiveMenu.js',
-        FOUNDATION + '/dist/js/plugins/foundation.responsiveToggle.js',
-        FOUNDATION + '/dist/js/plugins/foundation.reveal.js',
-        FOUNDATION + '/dist/js/plugins/foundation.slider.js',
-        FOUNDATION + '/dist/js/plugins/foundation.smoothScroll.js',
-        FOUNDATION + '/dist/js/plugins/foundation.sticky.js',
-        FOUNDATION + '/dist/js/plugins/foundation.tabs.js',
-        FOUNDATION + '/dist/js/plugins/foundation.toggler.js',
-        FOUNDATION + '/dist/js/plugins/foundation.tooltip.js',
-
         // Place custom JS here, files will be concantonated, minified if ran with --production
         'resources/js/**/*.js'
     ],
@@ -82,9 +52,10 @@ gulp.task('scripts', function() {
         }))
         .pipe(plugin.sourcemaps.init())
         .pipe(plugin.babel({
-            presets: ['env'],
+            presets: ['@babel/preset-env'],
             compact: true,
-            ignore: ['what-input.js']
+            // ignore: ['what-input.js']
+            ignore: ['node_modules/what-input/dist/what-input.js']
         }))
         .pipe(CUSTOMFILTER)
             .pipe(plugin.jshint(JSHINT_CONFIG))

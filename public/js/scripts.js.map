@@ -1,0 +1,1 @@
+{"version":3,"sources":["scripts.js"],"names":["app","Vue","el","data","message"],"mappings":"aAAA,IAAIA,IAAM,IAAVC,IAAID,CACAE,GAAI,OACJC,KAAM,CACFC,QAAS","file":"scripts.js","sourcesContent":["let app = new Vue({\n    el: '#app',\n    data: {\n        message: 'Hello Vue!'\n    }\n});\n"]}
